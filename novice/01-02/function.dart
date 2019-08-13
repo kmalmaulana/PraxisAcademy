@@ -1,56 +1,5 @@
-# Dart's Basic Syntaxs
+import 'dart:io';
 
-### Basic Structure
-```dart
-// Define a function.
-printInteger(int aNumber) {
-  print('The number is : $aNumber.'); // Print to console.
-}
-
-printString(String someString) {
-  print('The String is : $someString');
-}
-
-// This is where the app starts executing.
-main() {
-  var number = 42; // Declare and initialize a variable.
-  printInteger(number); // Call a function.
-
-  var string = 'I am String';
-  printString(string);
-}
-```
-### Keywords
-
-| Here | Is | The | Keyword |
-| --- | --- | --- | --- |
-| abstract | dynamics | implements | show |
-| as | else | imports | static |
-| assert | enum | in | super |
-| async | export | interface | switch |
-| await | extends | is | sync |
-| break | external | library | this |
-| ...  | ... | ... | ... |
-
-### Built-in Types
-Dart is support for these following types:
-    -`numbers`
-    -`strings`
-    -`booleans`
-    -`lists` (also known as arrays)
-    -`sets`
-    -`maps`
-    -`runes` (for expressing Unicode characters in a string)
-    -`symbols`
-
-
-To see types implementation touch \me/
-
-### Function
-Special session here I implement some functions to ** Shoe Clean and Repair ** system. 
-
-Check it out. (not finish). 
-```dart
 void main() {
   print('===Shoe-Cleaning-And-Repair===');
   print('==============Menu============');
@@ -103,7 +52,6 @@ selectServices() {
   if (services == service1) {
     print('$service1');
   } else {
-    print('R U sure?');
+    print('R U sure');
   }
 }
-```
