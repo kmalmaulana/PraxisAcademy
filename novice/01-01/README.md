@@ -46,7 +46,7 @@ int fibonacci(int n) {
 }
 
 var result = fibonacci(20);
-``` 
+```dart
 ### Comments
 // This is a normal, one-line comment.
 
