@@ -25,7 +25,9 @@ class MyApp extends StatelessWidget {
 ```
 Here is the result :
 
-<img src="images/startflutter1.png" width="260" position= "center">
+<img src="images/startflutter2.png" width="260">
+
+
 ### Use External Package
 
 Step :
@@ -41,7 +43,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Welcome to Flutter',
 ```
-    - Here is the result :
+
+Here is the result :
+
+<img src="images/startflutter3.png" width="260">
+
 
 ### Add Stateful Widget
 Stateless widgets are immutable, meaning that their properties can’t change—all values are final.
@@ -61,3 +67,9 @@ Stateful widgets maintain state that might change during the lifetime of the wid
     - In the RandomWordsState class, update the build() method to use _buildSuggestions(), rather than directly calling the word generation library. (Scaffold implements the basic Material Design visual layout.) Replace the method body with the highlighted code:
     - In the MyApp class, update the build() method by changing the title, and changing the home to be a RandomWords widget:
     - Restart app yeah
+
+Here is the result :
+
+<img src="images/startflutter4.png" width="260">
+
+
