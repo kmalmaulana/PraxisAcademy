@@ -1,4 +1,4 @@
-package id.example.start_flutter_part2;
+package id.example.start_flutter2;
 
 import android.os.Bundle;
 import io.flutter.app.FlutterActivity;
