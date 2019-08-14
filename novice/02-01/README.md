@@ -24,7 +24,8 @@ class MyApp extends StatelessWidget {
 }
 ```
 Here is the result :
-<img src="images/startflutter1.png" width="50">
+
+<img src="images/startflutter1.png" width="130">
 ### Use External Package
 
 Step :
