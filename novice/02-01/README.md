@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
 ```
 Here is the result :
 
-<img src="images/startflutter1.png" width="260">
+<img src="images/startflutter1.png" width="260" position= "center">
 ### Use External Package
 
 Step :
