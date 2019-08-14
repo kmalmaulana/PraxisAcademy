@@ -155,6 +155,6 @@ Here is the [source code](https://github.com/kmalmaulana/PraxisAcademy/blob/mast
 
 How it look :
 
-<img src="images/stateless_widgets.png" width="260">
+<img src="./images/stateless_widgets.png" width="260">
 
 
