@@ -1,4 +1,4 @@
-package id.example.animation;
+package id.example.animate;
 
 import android.os.Bundle;
 import io.flutter.app.FlutterActivity;

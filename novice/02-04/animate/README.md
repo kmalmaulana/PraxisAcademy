@@ -1,4 +1,4 @@
-# animation
+# animate
 
 A new Flutter application.
 
