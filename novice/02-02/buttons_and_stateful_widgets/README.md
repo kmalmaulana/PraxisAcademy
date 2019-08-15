@@ -74,6 +74,6 @@ class AwesomeButton extends StatefulWidget {
 }
 ```
 
-Take your time to check [he code](https://github.com/kmalmaulana/PraxisAcademy/blob/master/novice/02-02/buttons_and_stateful_widgets/lib/main.dart)
+Take your time to check [the code](https://github.com/kmalmaulana/PraxisAcademy/blob/master/novice/02-02/buttons_and_stateful_widgets/lib/main.dart)
 
 
