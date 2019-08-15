@@ -44,7 +44,7 @@ appBar: new AppBar(
 ```
 
 ### Class AwesomeButtonState
-This class is extends from ```State<AwesomeButton>``. As you can see, there is a ``List`` with String Value with the function ``onPressed`` that set to show when the button is pressed. Also there is a ``String displayedString = ""`` That will be fill with the value of the string which called in Text Widget inside the Container.
+This class is extends from ``State<AwesomeButton>``. As you can see, there is a ``List`` with String Value with the function ``onPressed`` that set to show when the button is pressed. Also there is a ``String displayedString = ""`` That will be fill with the value of the string which called in Text Widget inside the Container.
 
 ```dart
 class AwesomeButtonState extends State<AwesomeButton> {
