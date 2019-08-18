@@ -177,7 +177,7 @@ class expensiveFruit extends fruits {
 ```
 Here is how it's look :
 
-<img src="images/inherit.png" width="260">
+<img src="images/inherit.png" >
 
 
 ### Static Method and Variables
@@ -209,7 +209,7 @@ class circle {
 }
 ```
 
-<img src="images/static.png" width="260">
+<img src="images/static.png" >
 
 
 
