@@ -29,6 +29,9 @@ void main() {
   f1.showfruit();
 }
 ```
+Result :
+
+<img src="images/classes.png" width="260">
 
 ### Constructors
 When object is created for the first time it's gonna runed by constructor.
@@ -97,6 +100,10 @@ class fruit {
   }
 }
 ```
+Result :
+
+<img src="images/setter_getter.png" width="260">
+
 ### Inheritance
 This is one of the beauty part of OOP, you can access use variable in new class without declarate the variable it self with **Inheritance** . Inheritance can minimize your line of code.
 
@@ -170,6 +177,39 @@ class expensiveFruit extends fruits {
 ```
 Here is how it's look :
 
+<img src="images/inherit.png" width="260">
+
+
+### Static Method and Variables
+Static is generaly used for members/variables that have a static value. We cannot access the static members/variables by using the class object. So what's the advantages of using *static* keyword? 
+- Make instance variables and method more simple
+- Minimalize memory used, the less memory used the faster it's perform (for cheap laptop should notice this hahaha).
+
+Also to use static members/variables we should use *static* keyword before *void #nameMethod*.
+
+```dart
+//Main Class
+void main() {
+  circle.pi;
+  print(circle.pi);
+
+  //execute static method
+  circle.calculateArea();
+}
+
+//Secondary Class
+class circle {
+  //declarate static member/variable
+  static double pi = 3.14;
+
+  //declarare static method
+  static void calculateArea() {
+    print('Some code to calculare area');
+  }
+}
+```
+
+<img src="images/static.png" width="260">
 
 
 
