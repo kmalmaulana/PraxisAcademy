@@ -208,7 +208,7 @@ class circle {
   }
 }
 ```
-**Result**
+**Result :**
 
 <img src="images/static.png" >
 
