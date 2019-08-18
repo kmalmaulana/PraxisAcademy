@@ -29,7 +29,7 @@ void main() {
   f1.showfruit();
 }
 ```
-Result :
+**Result :**
 
 <img src="images/classes.png" width="260">
 
@@ -100,9 +100,9 @@ class fruit {
   }
 }
 ```
-Result :
+**Result :**
 
-<img src="images/setter_getter.png" width="260">
+<img src="images/setter_getter.png" >
 
 ### Inheritance
 This is one of the beauty part of OOP, you can access use variable in new class without declarate the variable it self with **Inheritance** . Inheritance can minimize your line of code.
@@ -175,7 +175,7 @@ class expensiveFruit extends fruits {
   }
 }
 ```
-Here is how it's look :
+**Here is how it's look :**
 
 <img src="images/inherit.png" >
 
@@ -208,6 +208,7 @@ class circle {
   }
 }
 ```
+**Result**
 
 <img src="images/static.png" >
 
