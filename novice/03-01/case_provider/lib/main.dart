@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:provider/provider.dart';
 import 'bloc/weather_bloc.dart';
 import 'bloc/weather_event.dart';
 import 'bloc/weather_state.dart';
@@ -10,6 +11,19 @@ void main() => runApp(MyApp());
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+//    return MultiProvider(
+//      providers: ,
+//    );
+    return MultiProvider(
+      providers: (
+        Provider(builder: key) async => Weather(cityName: null, temperature: null)),
+        child: ChangeNotifierProxyProvider<Weather, >(
+          builder: (context, weather, CartModel) =>
+            WeatherModel,
+        )
+    )
+
+    );
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
