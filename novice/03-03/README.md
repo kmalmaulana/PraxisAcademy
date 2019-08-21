@@ -6,14 +6,15 @@ Mobile-Backend-as-a-Service (MBaaS) is BaaS intended specifically for building a
 Connecting firebase to App
 
 **Before fetch:**
-<img src= "image/before_fetch.png" width="260">
+
+<img src="images/before_fetch.png" width="260">
 
 **Setup firestore database:**
 
-<img src= "image/database.png" width="250">
+<img src="images/database.png" width="250">
 
 **fetching with firestore database:**
 
-<img src= "image/fetch.png" width="250">
+<img src="images/fetch.png" width="250">
 
 
