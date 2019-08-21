@@ -11,7 +11,7 @@ Connecting firebase to App
 
 **Setup firestore database:**
 
-<img src="images/database.png" width="250">
+<img src="images/database.png">
 
 **fetching with firestore database:**
 
