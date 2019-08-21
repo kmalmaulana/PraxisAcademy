@@ -1,9 +1,12 @@
 # Asynchronous Programming, Konkurensi, dan Tooling
-
 ## Asynchronous Programming
 Form of input/output processing that permits other processing to continue before the transmission has finished.
+Asynchronous contain:
+- Async & await
+- Future
+- Stream
 
-# Async & await
+### Async & await
 If you want to use async and await you should put async modifief to it right after the function.
 
 ```dart
