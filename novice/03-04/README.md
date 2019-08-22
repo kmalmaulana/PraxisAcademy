@@ -17,15 +17,15 @@ Here is the example for using basic accessibility.
 
 **2. Codelab1**
 
-<img src="images/codelab1.png" weight="250">
+<img src="images/codelab1.png" width="250">
 
-<img src="images/codelab1_1.png" weight="250">
+<img src="images/codelab1_1.png" width="250">
 
-<img src="images/codelab1_2.png" weight="250">
+<img src="images/codelab1_2.png" width="250">
 
-<img src="images/codelab1_3.png" weight="250">
+<img src="images/codelab1_3.png" width="250">
 
-<img src="images/codelab1_4.png" weight="250">
+<img src="images/codelab1_4.png" width="250">
 
 
 
