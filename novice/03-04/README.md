@@ -13,7 +13,7 @@ Here is the example for using basic accessibility.
 
 **1. Githubrepo**
 
-<img src="images/example_repo.png" weight="250">
+<img src="images/example_repo.png" width="250">
 
 **2. Codelab1**
 
