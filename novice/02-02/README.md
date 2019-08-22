@@ -25,8 +25,10 @@ void main() {
 The Text widget is used to display text. You can set the property of Text such as Color, Position, Text, Position and More...
 
 **Play with text widgets**
+
 Edit text..
-<img src="images/edit_text" width="190">
+
+<img src="images/edit_text.png" width="190">
 
 Add color..
 
@@ -34,9 +36,10 @@ Add color..
 
 Add style font weight bold..
 
-<img src="images/text_style_bold" width="190">
+<img src="images/text_style_bold.png" width="190">
 
 ### Row
+
 A widget that displays its children in a horizontal array. Row widget can't be scroll. If you have just one child, then consider to use Align or Center to position the child.
 
 The runApp() function takes the given Widget and makes it the root of the widget tree. In this example, the widget tree consists of two widgets, the Center widget and its child, the Text widget. The framework forces the root widget to cover the screen, which means the text “Hello, world” ends up centered on screen.
