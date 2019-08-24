@@ -3,17 +3,30 @@ import 'package:flutter/material.dart';
 
 void main() {
   //runApp function
-  runApp(
-      //Center is a widget with child as a widget to
-      //Center widget means that text 'Hello widget' will end in the center of screen
-      Center(
-    child: Text(
-      'Helo widget nice to meet you again, I thought you were not gonna comeback',
-      //TextDirection.ltr means left-to-right
-      // must have textDirection in every Text Widget ???
-      textDirection: TextDirection.rtl,
-      textAlign: TextAlign.center,
-      style: TextStyle(color: Colors.yellowAccent, fontWeight: FontWeight.bold),
-    ),
+  runApp(new MaterialApp(
+    home: new homePage(),
   ));
+}
+
+class homePage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    return new Scaffold(
+      body: new Center(
+        child: new Container(
+          //box
+          width: 200.0,
+          height: 100.0,
+          color: Colors.yellow,
+          child: new Center(
+            child: new Text(
+              'this is Home Page',
+              style: new TextStyle(color: Colors.black),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
 }

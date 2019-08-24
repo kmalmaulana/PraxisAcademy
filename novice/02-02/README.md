@@ -38,6 +38,42 @@ Add style font weight bold..
 
 <img src="images/text_style_bold.png" width="190">
 
+**Play with Container & Center widgets**
+
+```dart
+import 'package:flutter/material.dart';
+
+void main() {
+  //runApp function
+  runApp(new MaterialApp(
+    home: new homePage(),
+  ));
+}
+
+class homePage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    return new Scaffold(
+      body: new Center(
+        child: new Container(
+          //box
+          width: 200.0,
+          height: 100.0,
+          color: Colors.yellow,
+          child: new Center(
+            child: new Text(
+              'this is Home Page',
+              style: new TextStyle(color: Colors.black),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+```
+
 ### Row
 
 A widget that displays its children in a horizontal array. Row widget can't be scroll. If you have just one child, then consider to use Align or Center to position the child.
