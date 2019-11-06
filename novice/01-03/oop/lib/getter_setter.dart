@@ -8,6 +8,9 @@ void main() {
   print('Fruit name is ${f1.name}');
   print('Fruit flavour is ${f1.flavour}');
   print('Discovered in ${f1.discovered}');
+
+  f1.fruitName = 'Avocado';
+  print('Fruit name is ${f1.name}');
 }
 
 //Secondary class
