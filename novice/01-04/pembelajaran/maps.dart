@@ -89,7 +89,7 @@ void main(List<String> arg) {
   numberSet.add(70);
   // print("Default implementation :${numberSet.runtimeType}");
   for (var no in numberSet) {
-    // print(no);
+    print(no);
   }
 
   // Adding Multiple Values to a HashSet

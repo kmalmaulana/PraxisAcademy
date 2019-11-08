@@ -18,14 +18,14 @@ class GenericClass<T> {
 }
 
 void main() {
-  GenericClass<int> iOb = new GenericClass(99);
+  GenericClass<int> iOb = new GenericClass(77);
   iOb.showType();
 
   int v = iOb.getob();
   print("value: ${v}");
 
-  // GenericClass<String> strOb = new GenericClass("Generics Test");
-  // strOb.showType();
+  GenericClass<String> strOb = new GenericClass("Generics Test");
+  strOb.showType();
 
   // String str = strOb.getob();
   // print("value: ${str}");

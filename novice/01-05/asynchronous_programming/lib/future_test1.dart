@@ -11,11 +11,11 @@ void main() async {
 //abstract class future
 Future<int> four() async {
   //return value
-  return 6;
+  return 4;
 }
 
 //abstract class future
-Future<String> movie() async {
+movie() async {
   //return value
   return 'Challenger Deep';
 }

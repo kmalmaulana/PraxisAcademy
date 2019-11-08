@@ -1,6 +1,7 @@
 void main() {
   getUserProfile();
-  print('fetching user profile...');
+  print('fetching user photo...');
+  print('show user bio');
 }
 
 // Imagine that this function is fetching user info from another service or database
