@@ -1,4 +1,4 @@
-// import 'dart:async';
+import 'dart:async';
 
 import 'dart:io';
 
@@ -30,8 +30,8 @@ void main() async {
 }
 
 printFileContent() async {
-  await showFile();
-  // print('The content of file is $fileContent');
+  String fileContent = await showFile();
+  print('The content of file is $fileContent');
 }
 
 Future<String> downloadAFile() {
