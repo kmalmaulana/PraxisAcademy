@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text('Flutter layout demo'),
         ),
-        body: Center(child: SecondRow()),
+        body: Center(child: Pavlova()),
       ),
     );
   }
@@ -98,27 +98,82 @@ class Pavlova extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Row(
+      child: Column(
         children: <Widget>[
-          Text('Strawberry Pavlova'), 
-          Text(descriptions),
+          Text(
+            'Strawberry Pavlova',
+            style: TextStyle(
+              fontSize: 22,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Text(
+              descriptions,
+              style: TextStyle(
+                fontSize: 18,
+                fontFamily: 'Roboto',
+                letterSpacing: 0.25,
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(20.0),
+            child: Container(
+              color: Colors.grey,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: <Widget>[
+                  SecondRow(),
+                  Text(
+                    '170 Reviews',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontWeight: FontWeight.w800,
+                      fontFamily: 'Roboto',
+                      letterSpacing: 0.5,
+                      fontSize: 20,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
           Row(
-            children: <Widget>[
-              SecondRow(),
-              Text('170 Reviews'),
-            ],
-          )
-          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
               Column(
                 children: <Widget>[
-                  Icon(Icons.)
+                  Icon(Icons.fastfood),
+                  Text('Prep:'),
+                  Text('25 Minute'),
+                ],
+              ),
+              Column(
+                children: <Widget>[
+                  Icon(Icons.fastfood),
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: 20.0),
+                    child: Text(
+                      'Prep:',
+                    ),
+                  ),
+                  Text('25 Minute'),
+                ],
+              ),
+              Column(
+                children: <Widget>[
+                  Icon(
+                    Icons.fastfood,
+                  ),
+                  Text('Prep:'),
+                  Text('25 Minute'),
                 ],
               )
-
             ],
           )
-          ],
+        ],
       ),
     );
   }
