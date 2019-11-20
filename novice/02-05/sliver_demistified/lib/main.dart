@@ -43,14 +43,17 @@ class _SliverAppBarDelegate extends SliverPersistentHeaderDelegate {
 }
 
 class CollapsingList extends StatelessWidget {
-  SliverPersistentHeader makeHeader(String headerText) {
+  SliverPersistentHeader makeHeader(String headerText, Color headerColor) {
     return SliverPersistentHeader(
       pinned: true,
+      
+      floating: false,
       delegate: _SliverAppBarDelegate(
+        
         minHeight: 60.0,
         maxHeight: 200.0,
         child: Container(
-            color: Colors.lightBlue, child: Center(child: Text(headerText))),
+            color: headerColor, child: Center(child: Text(headerText))),
       ),
     );
   }
@@ -59,12 +62,18 @@ class CollapsingList extends StatelessWidget {
   Widget build(BuildContext context) {
     return CustomScrollView(
       slivers: <Widget>[
-        makeHeader('Header Section 1'),
+        makeHeader('Surabaya', Colors.blue),
         SliverGrid.count(
           crossAxisCount: 3,
           children: [
-            Container(color: Colors.red, height: 150.0),
-            Container(color: Colors.purple, height: 150.0),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(color: Colors.red, height: 150.0),
+            ),
+            Container(
+              color: Colors.purple,
+              height: 150.0,
+            ),
             Container(color: Colors.green, height: 150.0),
             Container(color: Colors.orange, height: 150.0),
             Container(color: Colors.yellow, height: 150.0),
@@ -74,7 +83,7 @@ class CollapsingList extends StatelessWidget {
             Container(color: Colors.blue, height: 150.0),
           ],
         ),
-        makeHeader('Header Section 2'),
+        makeHeader('Header Section 2', Colors.blue),
         SliverFixedExtentList(
           itemExtent: 150.0,
           delegate: SliverChildListDelegate(
@@ -87,7 +96,7 @@ class CollapsingList extends StatelessWidget {
             ],
           ),
         ),
-        makeHeader('Header Section 3'),
+        makeHeader('Header Section 3', Colors.blue),
         SliverGrid(
           gridDelegate: new SliverGridDelegateWithMaxCrossAxisExtent(
             maxCrossAxisExtent: 200.0,
@@ -106,13 +115,16 @@ class CollapsingList extends StatelessWidget {
             childCount: 20,
           ),
         ),
-        makeHeader('Header Section 4'),
+        makeHeader('Papua', Colors.blue),
         // Yes, this could also be a SliverFixedExtentList. Writing
         // this way just for an example of SliverList construction.
         SliverList(
           delegate: SliverChildListDelegate(
             [
-              Container(color: Colors.pink, height: 150.0),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(color: Colors.pink, height: 150.0),
+              ),
               Container(color: Colors.cyan, height: 150.0),
               Container(color: Colors.indigo, height: 150.0),
               Container(color: Colors.blue, height: 150.0),

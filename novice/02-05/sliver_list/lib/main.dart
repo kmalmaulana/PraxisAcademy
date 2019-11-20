@@ -2,7 +2,13 @@ import 'package:flutter/material.dart';
 
 void main() => runApp(CustomScrollViewExample());
 
-class CustomScrollViewExample extends StatelessWidget {
+class CustomScrollViewExample extends StatefulWidget {
+  @override
+  _CustomScrollViewExampleState createState() =>
+      _CustomScrollViewExampleState();
+}
+
+class _CustomScrollViewExampleState extends State<CustomScrollViewExample> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -14,12 +20,47 @@ class CustomScrollViewExample extends StatelessWidget {
               title: Text('SliverAppBar'),
               backgroundColor: Colors.red,
               expandedHeight: 200.0,
-              pinned: true,
-              flexibleSpace: FlexibleSpaceBar(
-                  background: Image.asset(
-                'images/airmax.png',
-                fit: BoxFit.cover,
-              )),
+              pinned: false,
+              floating: true,
+              snap: false,
+              actions: <Widget>[
+                IconButton(
+                  icon: const Icon(Icons.search, color: Colors.white),
+                  onPressed: () {
+                    setState(() {
+                      //  return SliverAppBar().
+                    });
+                  },
+                )
+              ],
+              // flexibleSpace: FlexibleSpaceBar(
+              //     background: Image.asset(
+              //   'images/airmax.png',
+              //   fit: BoxFit.cover,
+              // )),
+            ),
+            SliverAppBar(
+              title: Text('SliverAppBar 2'),
+              backgroundColor: Colors.red,
+              expandedHeight: 200.0,
+              pinned: false,
+              floating: true,
+              snap: true,
+              actions: <Widget>[
+                IconButton(
+                  icon: const Icon(Icons.search, color: Colors.white),
+                  onPressed: () {
+                    setState(() {
+                      //  return SliverAppBar().
+                    });
+                  },
+                )
+              ],
+              // flexibleSpace: FlexibleSpaceBar(
+              //     background: Image.asset(
+              //   'images/airmax.png',
+              //   fit: BoxFit.cover,
+              // )),
             ),
             SliverFixedExtentList(
               itemExtent: 150.0,
