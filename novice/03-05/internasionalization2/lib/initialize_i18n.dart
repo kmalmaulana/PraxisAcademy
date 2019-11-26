@@ -1,5 +1,6 @@
 import 'dart:convert';
-import 'dart:async' show Future;
+// import 'dart:async' show Future;
+import 'dart:async';
 import 'package:flutter/services.dart' show rootBundle;
 // import 'package:flutter_i18n_json/constant.dart' show languages;
 import 'package:internasionalization2/constant.dart';

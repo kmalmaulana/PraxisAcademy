@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 void main() => runApp(MyApp());
 
@@ -27,12 +28,19 @@ class _MyHomePageState extends State<MyHomePage> {
   static const platform = const MethodChannel('flutter.native/helper');
 
   String response = "";
-  try {
-  final String result = await  platform.invokeMethod('helloFromNativeCode');
-  response = result;
-  } on PlatformException catch (e) {
-  response = "Failed to Invoke: '${e.message}'.";
-  }
+//  try {
+//  final String result = await  platform.invokeMethod('helloFromNativeCode');
+//  response = result;
+//  } on PlatformException; catch (e) {
+//  response = "Failed to Invoke: '${e.message}'.";
+//  }
+
+//  try {
+//    final String result = await platform.invokeMethod('helloFromNativeCode');
+//    response = result;
+//  } on PlatformException catch (e){
+//    response ="Failed to invoke: '${e.message}'.";
+//  }
 
   @override
   Widget build(BuildContext context) {

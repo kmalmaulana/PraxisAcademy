@@ -55,6 +55,7 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             RaisedButton(
+              color: Colors.yellowAccent,
               child: Text('Get Battery Level'),
               onPressed: _getBatteryLevel,
             ),
