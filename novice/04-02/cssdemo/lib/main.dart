@@ -46,7 +46,9 @@ class DemoPage extends StatelessWidget {
             RaisedButton(
               color: CSSColors.yellow,
               child: Text('Text0'),
-//              onPressed: TextStyle(color: Colors.blue),
+              onPressed: () {
+                changeText();
+              },
             )
           ],
         ),
